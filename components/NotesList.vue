@@ -57,10 +57,8 @@
             },
             filteredNotes () {
                 if (this.show === 'all') {
-                    console.log('notes: ', this.$store.state.notes);
                     return this.$store.state.notes
                 } else if (this.show === 'favorites') {
-                    console.log('favorites: ', this.$store.getters.favoriteNotes);
                     return this.$store.getters.favoriteNotes
                 }
             }
